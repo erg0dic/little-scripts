@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-def eye_rest_notification(mins=20):
+def eye_rest_notification(mins=1):
     # print "rest" every `min` minutes
     message = 'Its been 20 min. Look away for 20 seconds.'
     if 'linux' in sys.platform: 
@@ -26,8 +26,8 @@ def eye_rest_notification(mins=20):
             raise e
         toaster = win10toast.ToastNotifier()
         while True:
-            toaster.show_toast(title="Rest Notification", message=message, duration=5)
-            time.sleep(mins*60) # sleep for 20*60 seconds
+            toaster.show_toast(title="Rest Notification", msg=message, duration=5)
+            time.sleep(mins*60) # sleep for mins*60 seconds
     else:
         raise NotImplementedError(f"App doesn't support {sys.platform}.")
 
