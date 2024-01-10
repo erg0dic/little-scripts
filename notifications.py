@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-def eye_rest_notification(mins=1):
+def eye_rest_notification(mins=20):
     # print "rest" every `min` minutes
     message = 'Its been 20 min. Look away for 20 seconds.'
     if 'linux' in sys.platform: 
