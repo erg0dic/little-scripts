@@ -1,10 +1,10 @@
-# Little things that makes daily life easier
+# Little things that make daily life easier
 
 ## Getting started
 Just make sure you have python installed (e.g. from [here](https://www.anaconda.com/download)) and accessible from the command line. 
 
 ### Notifications
-Hopefully pip is installed by default. and you just need to do
+Hopefully pip is installed by default and you just need to do
 ```bash
 python notifications.py
 # or
