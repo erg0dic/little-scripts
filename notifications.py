@@ -25,7 +25,7 @@ def eye_rest_notification(mins=20):
         except ModuleNotFoundError as e:
             logging.error("Failed to install win10toast. If this fails, just do it manually using privileged pip.")
             raise e
-        logging.info('booting up in linux 😊/💀')
+        logging.info('booting up in win 😊/💀')
         toaster = win10toast.ToastNotifier()
         while True:
             toaster.show_toast(title="Rest Notification", msg=message, duration=5)
