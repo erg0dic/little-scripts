@@ -12,7 +12,7 @@ def eye_rest_notification(mins=20):
         logging.info('booting up in linux 😊/💀')
         while True:
             os.system(f"notify-send '{message}'")
-            # time.sleep(mins*60) # sleep for 20*60 seconds
+            time.sleep(mins*60) # sleep for 20*60 seconds
     elif 'win' in sys.platform:
         try:
             import win10toast
